@@ -1,0 +1,41 @@
+{
+  "name": "express-swagger-ui",
+  "description": "Serve swagger-ui with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)",
+  "version": "0.1.0",
+  "homepage": "https://github.com/AndreasPizsa/express-swagger-ui",
+  "author": "Andreas Pizsa (https://github.com/AndreasPizsa)",
+  "repository": "AndreasPizsa/express-swagger-ui",
+  "bugs": {
+    "url": "https://github.com/AndreasPizsa/express-swagger-ui/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "swagger-ui": "^2.1.4"
+  },
+  "peerDependencies": {
+    "express": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "swagger",
+    "express",
+    "middleware",
+    "serve"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
