@@ -22,7 +22,14 @@ function initializeExpressUi(options)
   if(!options.html) {
     options.html = fs
       .readFileSync(path.join(swaggerUi.dist,'index.html'),{encoding:'utf-8'})
-      .replace('http://petstore.swagger.io/v2/swagger.json', options.swaggerUrl);
+      .replace('http://petstore.swagger.io/v2/swagger.json', options.swaggerUrl)
+      .replace('</title>', '</title><base href="' + options.localPath + '/">');
+
+    // Set validatorUrl to null or string if set
+    if(options.hasOwnProperty('validatorUrl')){
+      options.html = options.html
+      .replace('new SwaggerUi({','new SwaggerUi({ validatorUrl: ' + (options.validatorUrl ? '"' + options.validatorUrl + '"' : null) +  ',');      
+    }
   }
 
   options.app
