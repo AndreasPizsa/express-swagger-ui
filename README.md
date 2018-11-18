@@ -1,4 +1,4 @@
-# express-swagger-ui [![NPM version](https://badge.fury.io/js/express-swagger-ui.svg)](http://badge.fury.io/js/express-swagger-ui)
+# express-swagger-ui [![NPM version](https://badge.fury.io/js/express-swagger-ui.svg)](http://badge.fury.io/js/express-swagger-ui) [![Greenkeeper badge](https://badges.greenkeeper.io/AndreasPizsa/express-swagger-ui.svg)](https://greenkeeper.io/)
 
 > Serve swagger-ui with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)
 
